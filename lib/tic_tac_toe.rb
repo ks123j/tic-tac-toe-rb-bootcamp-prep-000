@@ -112,8 +112,11 @@ end
 def play(board)
   input = gets
 
-  if !over?(board) && !won?(board) && !draw?(board)
+  if !over?(board)
     turn(board)
+    if !won?(board) && !draw?(board)
+      turn(board)
+    end
   end
   if won?(board)
     winner(board)
