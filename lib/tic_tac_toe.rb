@@ -116,6 +116,12 @@ def play(board)
     turn(board)
   end
 
+  i = 0
+  while i < 9
+    turn(board)
+    i += 1
+  end 
+
   if won?(board) && !draw?(board)
     winner(board)
   end
