@@ -118,7 +118,7 @@ def play(board)
     i +=1
   end
   until over?(board)
-    play(board)
+    turn(board)
   end
   if won?(board)
     winner(board)
