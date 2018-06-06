@@ -121,7 +121,7 @@ def play(board)
     i +=1
   end
   until over?(board)
-    turn(board)
+    play(board)
   end
   if won?(board)
     winner(board)
