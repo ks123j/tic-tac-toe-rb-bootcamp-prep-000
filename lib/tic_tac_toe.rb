@@ -116,8 +116,6 @@ def play(board)
     turn(board)
     won?(board)
     draw?(board)
-
-    end
   end
   if won?(board)
     winner(board)
