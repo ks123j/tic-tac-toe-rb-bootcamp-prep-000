@@ -114,9 +114,9 @@ def play(board)
 
   if !over?(board)
     turn(board)
-    won?(board)
-    draw?(board)
   end
+  won?(board)
+  draw?(board)
   if won?(board)
     winner(board)
   end
