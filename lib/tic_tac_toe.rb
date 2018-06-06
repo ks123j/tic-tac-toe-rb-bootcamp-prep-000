@@ -115,7 +115,12 @@ end
 
 def play(board)
   input = gets
-  until over?(board) 
+  i = 0;
+  while i < 9
+    turn(board)
+    i +=1
+  end
+  until over?(board)
     turn(board)
   end
   if won?(board)
