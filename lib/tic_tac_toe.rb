@@ -52,10 +52,7 @@ def turn(board)
     move(board, index, "X")
     display_board(board)
   else
-    i = 0
-    while i < 9
       turn(board)
-      i += 1
     end
   end
 end
