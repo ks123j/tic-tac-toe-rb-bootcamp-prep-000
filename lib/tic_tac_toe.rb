@@ -113,7 +113,7 @@ def play(board)
   input = gets
 
   if !over?(board) && !won?(board)
-    turn(board)
+    play(board)
   end
   if won?(board)
     winner(board)
