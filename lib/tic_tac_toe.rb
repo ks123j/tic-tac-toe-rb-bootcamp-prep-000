@@ -118,9 +118,9 @@ def play(board)
 
   i = 0
   while i < 9
-    turn(board)
+    play(board)
     i += 1
-  end 
+  end
 
   if won?(board) && !draw?(board)
     winner(board)
