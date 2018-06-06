@@ -52,7 +52,7 @@ def turn(board)
     move(board, index, "X")
     display_board(board)
   else
-      
+
   end
 end
 
@@ -111,11 +111,7 @@ end
 
 def play(board)
   input = gets
-  i = 0;
-  while i < 9
-    turn(board)
-    i +=1
-  end
+  
   if !over?(board)
     turn(board)
   end
